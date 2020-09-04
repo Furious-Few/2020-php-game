@@ -25,7 +25,7 @@ if ($row['spaceshipOneUnlocked'] == true) {
     <div class="spaceshipOne">
             <h1>Spaceship 1</h1>
             <img src="img/spaceship1.png" alt="spaceship 1">
-        </div>
+        </div> 
         <?php
     //echo 'output is TRUE';
     
