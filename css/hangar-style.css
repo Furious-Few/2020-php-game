@@ -31,3 +31,10 @@ input{
     display: flex;
     justify-content: space-around;
 }
+
+/* set message */
+
+.message{
+    text-align: center;
+    font-size: 30px;
+}

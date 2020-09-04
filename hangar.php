@@ -13,7 +13,9 @@ if ( !isset( $_SESSION['id']) ) {
     <?php                    
     if(isset($_GET['msg'])){
     echo $_GET['msg'];
+    echo '<hr>';
     }
+    
     ?>
 </div>
 
