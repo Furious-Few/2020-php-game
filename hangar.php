@@ -23,8 +23,10 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($row['spaceshipOneUnlocked'] == true) {
     ?>
     <div class="spaceshipOne">
-            <h1>Spaceship 1</h1>
+            <h1>Spaceship 1</h1><a href="quest.php?id=1">
             <img src="img/spaceship1.png" alt="spaceship 1">
+            </a>
+            
         </div>
         <?php
     //echo 'output is TRUE';
@@ -50,8 +52,10 @@ if ($row['spaceshipOneUnlocked'] == false) {
 if ($row['spaceshipTwoUnlocked']) {
     ?>
     <div class="spaceshipOne">
-            <h1>Spaceship 2</h1>
-            <img src="img/spaceship2.png" alt="spaceship 2">
+            <h1>Spaceship 2</h1><a href="quest.php?id=2">
+                <img src="img/spaceship2.png" alt="spaceship 2">
+            </a>
+            
         </div>
         <?php
     
@@ -78,8 +82,10 @@ if ($row['spaceshipTwoUnlocked']) {
 if ($row['spaceshipThreeUnlocked']) {
     ?>
     <div class="spaceshipOne">
-            <h1>Spaceship 3</h1>
-            <img src="img/spaceship3.png" alt="spaceship 3">
+            <h1>Spaceship 3</h1><a href="quest.php?id=3">
+                <img src="img/spaceship3.png" alt="spaceship 3">
+            </a>
+            
         </div>
         <?php
     // show space ship 3
