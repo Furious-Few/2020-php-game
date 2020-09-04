@@ -1,11 +1,18 @@
 <?php
 
 session_start();
+?>
 
+<div class="message">
+<?php
 if (isset($_GET['msg'])) {
     echo $_GET['msg'];
-}
+    
 ?>
+}
+</div>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
