@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/planet-style.css">
 <body class="opening hide-UI view-2D zoom-large data-close controls-close">
 <div id="navbar">
     <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
