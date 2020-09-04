@@ -20,7 +20,7 @@ if ($materialGenerator == 1) {
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');
-    sleep(5);
+    sleep(3);
     exit();
 }
 
@@ -32,7 +32,7 @@ if ($materialGenerator == 2) {
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');
-    sleep(5);
+    sleep(3);
     exit();
 }
 
@@ -46,7 +46,7 @@ if ($materialGenerator == 5) {
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' diamonds!');
-    sleep(5);
+    sleep(3);
     exit();
 }
 
@@ -60,7 +60,7 @@ else{
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' iron!');
-    sleep(5);
+    sleep(3);
     exit();
 }
 
