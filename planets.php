@@ -6,9 +6,11 @@
   <link rel="stylesheet" href="css/planet-style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <header> 
+
 <form action="planetdashboard.php">
     <input type="submit" value="Jump into orbit" />
 </form>
+<div id="dashboard" class="nav">Jump into orbit<span id="button"><a href="planetdashboard.php"></a></span></div>
 		
 <header>		
 </head>
