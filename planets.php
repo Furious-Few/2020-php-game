@@ -1,145 +1,160 @@
-<link rel="stylesheet" href="css/planet-style.css">
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Space Invaderz</title>
+  <link rel="stylesheet" href="css/planet-style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-<div id="navbar">
-    <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
+    <div id="navbar">
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
     <h1>Space Invaderz<br><span>by <a href="curio.com" target="_blank">@Alex</a></span></h1>
     <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
-</div>
-<div id="data">
-    <a class="ziretune" title="ziretune" href="#ziretunespeed">ziretune</a>
-    <a class="skorp" title="skorp" href="#skorpspeed">skorp</a>
-    <a class="tubiter" title="tubiter" href="#tubiterspeed">tubiter</a>
-    <a class="1 active" title="1" href="#1speed">1</a>
-    <a class="2" title="2" href="#2speed">2</a>
-    <a class="3" title="3" href="#3speed">3</a>
-    <a class="4" title="4" href="#4speed">4</a>
-    <a class="5" title="5" href="#5speed">5</a>
-    <a class="6" title="6" href="#6speed">6</a>
-</div>
-<div id="controls">
-    <label class="set-view">
+    </div>
+    <div id="data">
+      <a class="thenaus" title="thenaus" href="#thenausspeed">thenaus</a>
+      <a class="zyon" title="zyon" href="#zyonspeed">zyon</a>
+      <a class="skorp" title="skorp" href="#skorpspeed">skorp</a>
+      <a class="tubiter active" title="tubiter" href="#tubiterspeed">tubiter</a>
+      <a class="ziretune" title="ziretune" href="#ziretunespeed">ziretune</a>
+      <a class="resculate" title="resculate" href="#resculatespeed">resculate</a>
+      <a class="titan" title="titan" href="#titanspeed">titan</a>
+      <a class="amodeus" title="amodeus" href="#amodeusspeed">amodeus</a>
+      <a class="plixeus" title="plixeus" href="#plixeusspeed">plixeus</a>
+    </div>
+    <div id="controls">
+      <label class="set-view">
         <input type="checkbox">
-    </label>
-    <label class="set-zoom">
+      </label>
+      <label class="set-zoom">
         <input type="checkbox">
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="radio" class="set-speed" name="scale" checked>
         <span>Speed</span>
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="radio" class="set-price" name="scale">
-        <span>Price of gas</span>
-    </label>
-    <label>
+        <span>Price</span>
+      </label>
+      <label>
         <input type="radio" class="set-distance" name="scale">
-        <span>Distance to travel</span>
-    </label>
-</div>
-<div id="universe" class="scale-stretched">
-    <div id="galaxy">
-        <div id="solar-system" class="1">
-            <div id="skorp" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>skorp</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="tubiter" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>tubiter</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="1" class="orbit">
-                <div class="pos">
-                    <div class="orbit">
-                        <div class="pos">
-                            <div class="moon"></div>
-                        </div>
-                    </div>
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>1</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="2" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>2</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="3" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>3</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="4" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <div class="ring"></div>
-                        <dl class="infos">
-                            <dt>4</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="5" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>5</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="6" class="orbit">
-                <div class="pos">
-                    <div class="planet">
-                        <dl class="infos">
-                            <dt>6</dt>
-                            <dd><span></span></dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div id="ziretune">
-                <dl class="infos">
-                    <dt>ziretune</dt>
-                    <dd><span></span></dd>
-                </dl>
-            </div>
-        </div>
+        <span>Distance</span>
+      </label>
     </div>
-</div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script type="text/javascript">
-    if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="tubiter">
+          <div id="zyon" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>zyon</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="skorp" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>skorp</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="tubiter" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>tubiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="ziretune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>ziretune</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="resculate" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>resculate</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="titan" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>titan</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="amodeus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>amodeus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="plixeus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>plixeus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="thenaus">
+            <dl class="infos">
+              <dt>thenaus</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
-</script>
-<script src="js/prefixfree.min.js"></script>
-<script src="js/scripts.min.js"></script>
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
 </body>
+</html>
