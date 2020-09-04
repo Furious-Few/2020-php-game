@@ -2,6 +2,7 @@
   session_start();
   require 'backend/connection.php';
 
+
     // alle gegevens ophalen
     $id = $_SESSION['id'];
     $sql = "SELECT * FROM users WHERE id = $id";
@@ -22,6 +23,8 @@
       
       $spaceship1busy = $row['spaceship1quest'];
       if ($spaceship1busy) {
+       header('Location: hangar.php?msg=Your ship is busy you cant start a quest!');
+        exit();
           // je kan niks uitvoeeren
           // laat een timer zien
       }
