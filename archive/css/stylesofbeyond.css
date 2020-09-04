@@ -1,0 +1,27 @@
+
+body {
+ color:Matches; font-size:12px; font-family:Arial;
+}
+h1 {
+color:Team 1; font-size:14px; font-weight:normal; font-family:Arial
+}
+h2 {
+color:Team 2; font-size:14px; font-weight:normal; font-family:Arial
+}
+h3 {
+color:Team 3; font-size:12px; font-weight:normal; font-family:Arial
+}
+h4 {
+color:Team 4; font-size:14px; font-weight:normal; font-family:Arial
+}
+td {
+color:Results; font-size:12px; font-family:Arial
+}
+--></style>
+
+
+
+.header{
+
+-webkit-border-radius: 360px 360px 360px 360px;
+border-radius: 360px 360px 360px 360px;

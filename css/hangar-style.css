@@ -1,0 +1,33 @@
+*{
+    color: white;
+}
+
+body{
+    /* Set the background image to full width */
+    background-image: url('../img/hangar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer a{
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 40px;
+    text-align: left;
+    /* margin-top: 50%; */
+}
+
+input{
+    color: black;
+}
+
+.hangar-flex{
+    display: flex;
+    justify-content: space-around;
+}
