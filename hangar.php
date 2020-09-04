@@ -25,13 +25,9 @@ if ($row['spaceshipOneUnlocked'] == true) {
     <div class="spaceshipOne">
             <h1>Spaceship 1</h1><a href="quest.php?id=1">
             <img src="img/spaceship1.png" alt="spaceship 1">
-<<<<<<< HEAD
             </a>
             
         </div>
-=======
-        </div> 
->>>>>>> 9302c0fa23981f077742f63c4a411c959b5c24f6
         <?php
     //echo 'output is TRUE';
     
