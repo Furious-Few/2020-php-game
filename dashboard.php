@@ -111,20 +111,20 @@ jQuery(document).ready(function() {
 
                 <form action="backend/sell_all.php" method="post">
                     <input type="hidden" name="formType" value="iron">
-                    <label for="Iron">Iron</label><br>
+                    <label for="Iron">Sell all Iron</label><br>
                     <input type="submit" value="Sell all!">
                 </form>
 
                 <form action="backend/sell_all.php" method="post">
                     <input type="hidden" name="formType" value="gold"/>
-                    <label for="Gold">Gold</label>
-                    <input type="submit" value="Sell!">
+                    <label for="Gold">Sell all Gold</label>
+                    <input type="submit" value="Sell all!">
                 </form>
 
                 <form action="backend/sell_all.php" method="post">
                     <input type="hidden" name="formType" value="diamond"/>
-                    <label for="diamond">diamonds</label>
-                    <input type="submit" value="Sell!">
+                    <label for="diamond">Sell all diamonds</label>
+                    <input type="submit" value="Sell all!">
                 </form>
             </div>
             
