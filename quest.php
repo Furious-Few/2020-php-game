@@ -2,7 +2,6 @@
   session_start();
   require 'backend/connection.php';
 
-
     // alle gegevens ophalen
     $id = $_SESSION['id'];
     $sql = "SELECT * FROM users WHERE id = $id";
@@ -11,7 +10,7 @@
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
   // check welke space shuttle je hebt gekozen
-
+  
   $spaceshuttle = $_GET['id'];
 
   echo $spaceshuttle;
@@ -23,15 +22,13 @@
       
       $spaceship1busy = $row['spaceship1quest'];
       if ($spaceship1busy) {
-       header('Location: hangar.php?msg=Your ship is busy you cant start a quest!');
-        exit();
           // je kan niks uitvoeeren
           // laat een timer zien
       }
       elseif ($spaceship1busy == 1) {
           // kies een quest
           ?>
-          
+
           <form action="backend/quest-backend.php">
           
           </form>

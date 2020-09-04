@@ -7,9 +7,12 @@ session_start();
 <?php
 if (isset($_GET['msg'])) {
     echo $_GET['msg'];
-    
-?>
+    echo '<hr>';
 }
+?>
+
+
+
 </div>
 
 
@@ -22,7 +25,7 @@ if (isset($_GET['msg'])) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="css/main-style.css">
-    <link rel="stylesheet" href="splash-screen.css">
+    <link rel="stylesheet" href="css/splash-screen.css">
     <title>Space miner</title>
 </head>
 <body>
