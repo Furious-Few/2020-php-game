@@ -5,7 +5,12 @@
   <title>Space Invaderz</title>
   <link rel="stylesheet" href="css/planet-style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+<header> 
+<div class="button-input">
+<input type="submit" value="Jump into orbit" required>
+</div>
+		
+<header>		
 </head>
 <body>
 <!-- partial:index.partial.html -->
