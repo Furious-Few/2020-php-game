@@ -9,7 +9,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 $materialGenerator = rand(1,10);
 
-
+//voor lucchallah
 // chance 2 in 10 u get gold
 
 if ($materialGenerator == 1) {
