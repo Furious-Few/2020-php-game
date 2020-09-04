@@ -38,3 +38,7 @@ input{
     text-align: center;
     font-size: 30px;
 }
+
+.hangar-flex p{
+    font-size: 25px;
+}

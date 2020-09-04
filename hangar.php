@@ -41,6 +41,17 @@ if ($row['spaceshipOneUnlocked'] == true) {
             <a href="quest.php?id=1">
             <img src="img/spaceship1.png" alt="spaceship 1">
             </a>
+            <p>
+            <?php
+                if ($row['spaceship1quest'] == true) {
+                    echo '<p>Spaceship 1 is busy!</p>';
+                }
+                elseif ($row['spaceship1quest'] == false) {
+                    echo '<p>Spaceship 1 is ready for a quest!</p>';
+                }
+            ?>
+
+            </p>
             
         </div>
         <?php
@@ -70,6 +81,17 @@ if ($row['spaceshipTwoUnlocked']) {
             <h1>Spaceship 2</h1><a href="quest.php?id=2">
                 <img src="img/spaceship2.png" alt="spaceship 2">
             </a>
+            <p>
+            <?php
+                if ($row['spaceship2quest'] == true) {
+                    echo '<p>Spaceship 2 is busy!</p>';
+                }
+                elseif ($row['spaceship2quest'] == false) {
+                    echo '<p>Spaceship 2 is ready for a quest!</p>';
+                }
+            ?>
+
+            </p>
             
         </div>
         <?php
@@ -100,6 +122,17 @@ if ($row['spaceshipThreeUnlocked']) {
             <h1>Spaceship 3</h1><a href="quest.php?id=3">
                 <img src="img/spaceship3.png" alt="spaceship 3">
             </a>
+            <p>
+            <?php
+                if ($row['spaceship3quest'] == true) {
+                    echo '<p>Spaceship 3 is busy!</p>';
+                }
+                elseif ($row['spaceship3quest'] == false) {
+                    echo '<p>Spaceship 3 is ready for a quest!</p>';
+                }
+            ?>
+
+            </p>
             
         </div>
         <?php

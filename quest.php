@@ -13,8 +13,6 @@
   
   $spaceshuttle = $_GET['id'];
 
-  echo $spaceshuttle;
-  
   // code for spaceshuttle 1
   if ($spaceshuttle == 1) {
       
@@ -29,8 +27,9 @@
           // je kan niks uitvoeeren
           // laat een timer zien
       }
-      elseif ($spaceship1busy == 1) {
-          // kies een quest
+      elseif ($spaceship1busy == false) {
+          echo 'You can choose of the quests below!';
+          exit();
           
       }
 
@@ -47,8 +46,10 @@
       // je kan niks uitvoeeren
       // laat een timer zien
   }
-  elseif ($spaceship2busy == 1) {
+  elseif ($spaceship2busy == false) {
       // kies een quest
+      echo 'You can choose of the quests below!';
+      exit();
       
   }
     }
@@ -66,8 +67,10 @@
       // je kan niks uitvoeeren
       // laat een timer zien
   }
-  elseif ($spaceship3busy == 1) {
+  elseif ($spaceship3busy == false) {
       // kies een quest
+      echo 'You can choose of the quests below!';
+      exit();
       
   }
     }
