@@ -13,7 +13,4 @@
             echo "[${chat['time']}] <b>$username : </b> ${chat['message']}<br><br>";
 
         }
-        
-
-
 ?>
