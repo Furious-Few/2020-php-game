@@ -17,10 +17,10 @@ if ($materialGenerator == 1) {
 
     $sql = "UPDATE `users` SET `gold` = `gold` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
+    sleep(3);
     $stmt->execute();
 
-    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');
-    sleep(3);
+    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');  
     exit();
 }
 
@@ -29,10 +29,10 @@ if ($materialGenerator == 2) {
 
     $sql = "UPDATE `users` SET `gold` = `gold` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
+    sleep(3);
     $stmt->execute();
 
-    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');
-    sleep(3);
+    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');   
     exit();
 }
 
@@ -43,10 +43,10 @@ if ($materialGenerator == 5) {
 
     $sql = "UPDATE `users` SET `diamond` = `diamond` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
+    sleep(3);
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' diamonds!');
-    sleep(3);
     exit();
 }
 
@@ -57,10 +57,10 @@ else{
 
     $sql = "UPDATE `users` SET `iron` = `iron` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
+    sleep(3);
     $stmt->execute();
 
     header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' iron!');
-    sleep(3);
     exit();
 }
 
