@@ -56,6 +56,7 @@
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="tubiter">
+        <a href="https://www.lucict.com" target="_blank">
           <div id="zyon" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -66,6 +67,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="skorp" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -76,6 +79,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="tubiter" class="orbit">
             <div class="pos">
               <div class="orbit">
@@ -83,6 +88,8 @@
                   <div class="moon"></div>
                 </div>
               </div>
+              </a>
+              <a href="https://www.lucict.com" target="_blank">
               <div class="planet">
                 <dl class="infos">
                   <dt>tubiter</dt>
@@ -91,6 +98,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="ziretune" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -101,6 +110,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="resculate" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -111,6 +122,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="titan" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -122,6 +135,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="amodeus" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -132,6 +147,8 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="plixeus" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -142,12 +159,15 @@
               </div>
             </div>
           </div>
+          </a>
+          <a href="https://www.lucict.com" target="_blank">
           <div id="thenaus">
             <dl class="infos">
               <dt>thenaus</dt>
               <dd><span></span></dd>
             </dl>
           </div>
+          </a>
         </div>
       </div>
     </div>
