@@ -27,12 +27,12 @@
         <span>Speed</span>
     </label>
     <label>
-        <input type="radio" class="set-size" name="scale">
-        <span>Size</span>
+        <input type="radio" class="set-price" name="scale">
+        <span>Price of gas</span>
     </label>
     <label>
         <input type="radio" class="set-distance" name="scale">
-        <span>Distance</span>
+        <span>Distance to travel</span>
     </label>
 </div>
 <div id="universe" class="scale-stretched">
