@@ -87,6 +87,12 @@ jQuery(document).ready(function() {
                 </a>
             </div>
 
+            <div class="universe">
+                <a href="planets.php">
+                    <img src="img/universe.png" alt="universe" width="300px" height="300px">
+                </a>
+            </div>
+
             <div class="shop">
                 <!-- form for selling 1 iron -->
                 <form action="backend/shop.php" method="post">
