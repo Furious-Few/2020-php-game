@@ -50,6 +50,8 @@
           </form>
         </div>
           <?php
+          // header('Location: ../hangar.php?msg=Quest started!');  
+          // exit();
           
       }
 

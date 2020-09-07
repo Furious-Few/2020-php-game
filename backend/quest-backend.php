@@ -17,6 +17,9 @@
       $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
       $stmt = $conn->prepare($sql);
       $stmt->execute();
+
+      header('Location: ../hangar.php?msg=Quest started!');  
+          exit();
        
 
 ?>
