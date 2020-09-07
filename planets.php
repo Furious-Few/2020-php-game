@@ -10,7 +10,7 @@
 
 	
 <div id="dashboard" class="nav">Jump into orbit<span id="button"><a href="planetdashboard.php"></a></span></div>
-
+<div id="dashboard2" class="nav">Go to Auction House<span id="button"><a href="auctionhouse.php"></a></span></div>
 <header>		
 </head>
 <body>
