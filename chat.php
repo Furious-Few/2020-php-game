@@ -17,7 +17,7 @@ if(!$_SESSION['id']){
 		 $("#div_refresh").load("load.php");
         setInterval(function() {
             $("#div_refresh").load("load.php");
-        }, 100);
+        }, 100); 
     });
  
 </script>
