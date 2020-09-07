@@ -14,7 +14,7 @@
 
   $spaceshuttle = $_GET['id'];
 
-  echo $spaceshuttle;
+
 
   if ($spaceshuttle == 1) {
       // code for spaceshuttle 1
@@ -35,9 +35,9 @@
           
           ?>
           
-          <div class="quest 1">
+          <div class="quest1">
           <form action="backend/quest-backend.php">
-          <input type="hidden" name="busy" value="1"/>
+          <input type="hidden" name="busy" value="1">
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
@@ -45,7 +45,7 @@
       
          2 min  reward + 100 iron
             </p>
-            <input type="submit" name="start">
+            <input type="submit" name="start"/>
           
           </form>
         </div>
@@ -91,3 +91,24 @@
   }
     }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quest-style.css">
+
+    <title>quests</title>
+</head>
+<body>
+    <main>
+        <!-- <div class="spaceshipOne">
+            <h1>Spaceship 1</h1>
+            <img src="img/spaceship1.png" alt="">
+        </div> -->
+    </main>
+    <footer>
+            <a href="hangar.php"><p>Back!</p></a>
+    </footer>
+</body>
+</html>
