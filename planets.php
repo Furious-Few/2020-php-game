@@ -7,11 +7,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <header> 
 
-<form action="planetdashboard.php">
-    <input type="submit" value="Jump into orbit" />
-</form>
+
+	
 <div id="dashboard" class="nav">Jump into orbit<span id="button"><a href="planetdashboard.php"></a></span></div>
-		
+
 <header>		
 </head>
 <body>
@@ -32,6 +31,9 @@
       <a class="titan" title="titan" href="#titanspeed">titan</a>
       <a class="amodeus" title="amodeus" href="#amodeusspeed">amodeus</a>
       <a class="plixeus" title="plixeus" href="#plixeusspeed">plixeus</a>
+      <form action="planetdashboard.php">
+            <input type="submit" value="Jump into orbit" />
+        </form>
     </div>
     <div id="controls">
       <label class="set-view">
