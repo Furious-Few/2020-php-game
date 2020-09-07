@@ -32,15 +32,21 @@
           // kies een quest
           echo 'You can choose of the quests below!';
           exit();
+          
           ?>
           
           <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="1">
-            <p></p>
+            <input type="hidden" name="busy" value="1"/>
+            <p> first main quest 
+
+      you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
+      and collect the recources you get from them then you continue to go to the designated planet.
+      
+         2 min  reward + 100 iron
+            </p>
             <input type="submit" name="start">
           
           </form>
-
           <?php
           
       }
