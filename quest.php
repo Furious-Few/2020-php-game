@@ -67,7 +67,7 @@
   elseif ($spaceship2busy == false) {
       // kies een quest
         echo 'You can choose of the quests below!';
-      exit();
+      
   }
     }
 
@@ -87,7 +87,7 @@
   elseif ($spaceship3busy == false) {
       // kies een quest
         echo 'You can choose of the quests below!';
-      exit();
+      
   }
     }
 ?>
