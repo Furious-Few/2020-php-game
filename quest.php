@@ -2,6 +2,7 @@
   session_start();
   require 'backend/connection.php';
 
+
     // alle gegevens ophalen
     $id = $_SESSION['id'];
     $sql = "SELECT * FROM users WHERE id = $id";
@@ -10,33 +11,42 @@
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
   // check welke space shuttle je hebt gekozen
-  
+
   $spaceshuttle = $_GET['id'];
 
-  // code for spaceshuttle 1
+  echo $spaceshuttle;
+
   if ($spaceshuttle == 1) {
-      
+      // code for spaceshuttle 1
 
       // checken of hij bezig is
       
       $spaceship1busy = $row['spaceship1quest'];
-      if ($spaceship1busy) {
-        
-          header('Location: hangar.php?msg=Spaceship 1 is busy!');
-          exit();
+      if ($spaceship1busy == 1) {
+       header('Location: hangar.php?msg=Your ship is busy you cant start a quest!');
+        exit();
           // je kan niks uitvoeeren
           // laat een timer zien
       }
-      elseif ($spaceship1busy == false) {
+      elseif ($spaceship1busy == 0) {
+          // kies een quest
           echo 'You can choose of the quests below!';
           exit();
+          ?>
+          
+          <form action="backend/quest-backend.php">
+            <input type="hidden" name="busy" value="1">
+            <p></p>
+            <input type="submit" name="start">
+          
+          </form>
+
+          <?php
           
       }
 
   }
-  // code for sapceshuttle 2
-
-  if ($spaceshuttle == 2) {
+ if ($spaceshuttle == 2) {
     // code for spaceshuttle 2
     $spaceship2busy = $row['spaceship2quest'];
     if ($spaceship2busy) {
@@ -48,9 +58,8 @@
   }
   elseif ($spaceship2busy == false) {
       // kies een quest
-      echo 'You can choose of the quests below!';
+        echo 'You can choose of the quests below!';
       exit();
-      
   }
     }
 
@@ -69,9 +78,8 @@
   }
   elseif ($spaceship3busy == false) {
       // kies een quest
-      echo 'You can choose of the quests below!';
+        echo 'You can choose of the quests below!';
       exit();
-      
   }
     }
 ?>
