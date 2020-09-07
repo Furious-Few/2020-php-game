@@ -31,12 +31,13 @@
       elseif ($spaceship1busy == 0) {
           // kies een quest
           echo 'You can choose of the quests below!';
-          exit();
+         // exit();
           
           ?>
           
+          <div class="quest 1">
           <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="1"/>
+          <input type="hidden" name="busy" value="1"/>
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
@@ -47,6 +48,7 @@
             <input type="submit" name="start">
           
           </form>
+        </div>
           <?php
           
       }
