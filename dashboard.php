@@ -141,23 +141,60 @@ jQuery(document).ready(function() {
             </div>
         </div> 
     </main>
+    <div class="chat-name">
+        <h1>Chat</h1>
+    </div>
+    
     <hr>
     <footer>
-        <div class="chat-flex">
-            <div id="div_refresh">
-                    
-            </div>
-            </div>
-        </div>
+        <div class="footer-flex">
+            <div class="chat">
+            
+                <div class="chat-flex">
                 
-        <div class="form">
-        <form action="backend/chatcontroller.php" method="post">
-            <input type="hidden" name="formType" value="chat">
-                <br>
-            <input type="hidden" name="User" value="<?php echo $id ?>">
-            <input type="text" placeholder="Message" name="Message" required>
-            <!-- <input type="submit" value="send" required> -->
-        </form>
+                    <div id="div_refresh">
+
+                    </div>
+                </div>
+            
+                
+            <div class="form">
+                
+                <form action="backend/chatcontroller.php" method="post">
+                    <input type="hidden" name="formType" value="chat">
+                    <br>
+                    <input type="hidden" name="User" value="<?php echo $id ?>">
+                    <input type="text" placeholder="Message" name="Message" required>
+                    <!-- <input type="submit" value="send" required> -->
+                </form>
+            </div>
+            </div>
+            <!-- start of bank history -->
+            <div class="bank-overkoepelend">
+                <h1>bank history</h1>
+                <hr>
+            <div class="bank-history">
+                
+                    <?php
+
+                        $sql = "SELECT * FROM bank_history";
+                        $query = $conn->query($sql);
+                        $bank_historys = $query->fetchAll(PDO::FETCH_ASSOC);
+
+                        // echo '<h1>Bank history</h1>';
+                        // echo '<hr>';
+                        foreach ($bank_historys as $bank) {
+                            
+                            echo "${bank['name']} ${bank['message']}<br><br>";
+
+                        }
+                    ?>
+            </div>
+            </div>
+            
+        </div>
+        
+        
     </footer>
 </body>
 </html>

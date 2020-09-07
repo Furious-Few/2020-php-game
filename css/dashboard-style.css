@@ -129,9 +129,16 @@ body{
     overflow-y: scroll;
 }
 
+.chat-name{
+    margin-left: 100px;
+    color: white;
+    font-size: 25px;
+
+}
+
 .form input{
     float: left;
-    margin-right: 87%;
+    margin-right: 200px;
 }
 
 /* align the loaded chat text */
@@ -162,3 +169,25 @@ body hr{
     75%  {top: 0px; left: 20px; right: 0px;}
     100% {top: 10px; left: 0px; right: 10px;}
   }
+
+/* footer flex */
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank-history{
+    border: 2px solid black;
+    margin-right: 50px;
+    margin-top: 100px;
+    font-size: 25px;
+    color: white;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.bank-overkoepelend{
+    font-size: 25px;
+    color: white;
+}
+
