@@ -8,7 +8,7 @@ if ( !isset( $_SESSION['id']) ) {
 
 require_once 'backend/connection.php';
 
-
+//luc
 // get all infromation from the user logged in
 $id = $_SESSION['id'];
 $sql = "SELECT * FROM users WHERE id = $id";
