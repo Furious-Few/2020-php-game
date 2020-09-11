@@ -8,7 +8,7 @@ if ( !isset( $_SESSION['id']) ) {
 
 require_once 'backend/connection.php';
 
-
+//luc
 // get all infromation from the user logged in
 $id = $_SESSION['id'];
 $sql = "SELECT * FROM users WHERE id = $id";
@@ -62,6 +62,11 @@ jQuery(document).ready(function() {
                     }
                 ?>
             </div>
+            <div class="audio">
+        <audio controls autoplay>
+	        <source src="starwars.mp3" type="audio/mpeg">
+	    </audio>
+    </div>
             <div class="message">
                 <h3>Log:</h3>
                 <?php
@@ -80,6 +85,7 @@ jQuery(document).ready(function() {
         <hr>
     </header>
     <main>
+	
         <div class="main-flex">
             <div class="meteor">
                 <a href="backend/meteorClick.php">
