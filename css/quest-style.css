@@ -1,5 +1,29 @@
-.quest1{
-	width:180px;
+.quests{
+ flex-direction: row;	
+    width:1000px;
 	padding: 5px;
+	
+}
+
+
+
+.quest1{
 	border:solid 1px;
+	padding-bottom: 5px;
+}
+.quest2{
+	border:solid 1px;
+	padding-bottom: 5px;
+}
+.quest3{
+	border:solid 1px;
+	padding-bottom: 5px;
+}
+.quest4{
+	border:solid 1px;
+	padding-bottom: 5px;
+}
+.quest5{
+	border:solid 1px;
+	padding-bottom: 5px;
 }

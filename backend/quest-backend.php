@@ -13,13 +13,38 @@
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
-   
+  $startQuest = $_GET['busy'];
+
+     if ($startQuest == 1) {
+       # code...
+    
       $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
       $stmt = $conn->prepare($sql);
       $stmt->execute();
 
       header('Location: ../hangar.php?msg=Quest started!');  
-          exit();
+          exit(); 
+        }
+     
+       if ($startQuest == 2) {
+         # code...
        
+        $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute();
 
+      header('Location: ../hangar.php?msg=Quest started!');  
+          exit();
+          }
+
+           if ($startQuest == 3) {
+         # code...
+       
+        $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+      $stmt = $conn->prepare($sql);
+      $stmt->execute();
+
+      header('Location: ../hangar.php?msg=Quest started!');  
+          exit();
+          }
 ?>
