@@ -80,8 +80,8 @@ jQuery(document).ready(function() {
         <hr>
     </header>
     <main>
-	<audio src="/backgroundmusic/starwars.mp3" controls>
-	<p>If you are reading this, it is because your browser does not support the audio element.</p>
+	<audio controls autoplay>
+	<source src="starwars.mp3" type="audio/mpeg">
 	</audio>
         <div class="main-flex">
             <div class="meteor">
