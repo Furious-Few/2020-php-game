@@ -62,6 +62,11 @@ jQuery(document).ready(function() {
                     }
                 ?>
             </div>
+            <div class="audio">
+        <audio controls autoplay>
+	        <source src="starwars.mp3" type="audio/mpeg">
+	    </audio>
+    </div>
             <div class="message">
                 <h3>Log:</h3>
                 <?php
@@ -80,9 +85,7 @@ jQuery(document).ready(function() {
         <hr>
     </header>
     <main>
-	<audio controls autoplay>
-	<source src="starwars.mp3" type="audio/mpeg">
-	</audio>
+	
         <div class="main-flex">
             <div class="meteor">
                 <a href="backend/meteorClick.php">
