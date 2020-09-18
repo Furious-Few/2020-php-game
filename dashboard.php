@@ -62,11 +62,8 @@ jQuery(document).ready(function() {
                     }
                 ?>
             </div>
-            <div class="audio">
-        <audio controls autoplay>
-	        <source src="starwars.mp3" type="audio/mpeg">
-	    </audio>
-    </div>
+        
+   
             <div class="message">
                 <h3>Log:</h3>
                 <?php
