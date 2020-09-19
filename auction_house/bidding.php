@@ -50,7 +50,7 @@ function bid(id)
       <a class="navbar-brand" href="#">Auction House</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="UserProfile.php"><b>&nbsp&nbsp&nbsp&nbspHome</b></a></li>
+      <li><a href="../planetdashboard.php"><b>&nbsp&nbsp&nbsp&nbspHome</b></a></li>
   
       <li><a href="UserPost.php"><b>Post</b></a></li>
        <li><a href="MyPost.php"><b>MyPost</b></a></li>
