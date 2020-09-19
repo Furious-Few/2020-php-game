@@ -18,7 +18,7 @@
 <body class="opening hide-UI view-2D zoom-large data-close controls-close">
     <div id="navbar">
       <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-    <h1>Space Invaderz<br><span>by <a href="curio.com" target="_blank">@Alex</a></span></h1>
+    <h1>Space Invaderz<br><span>by <a href="curio.com" target="_blank">@ByLucRaviRubenG&Alex</a></span></h1>
     <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
     </div>
     <div id="data">
