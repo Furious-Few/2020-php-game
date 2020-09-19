@@ -47,7 +47,7 @@ function bid(id)
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Auction House</a>
+      <a class="navbar-brand" href="#">Kinbo.Com</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="UserProfile.php"><b>&nbsp&nbsp&nbsp&nbspHome</b></a></li>
