@@ -61,7 +61,7 @@
       header('Location: ../hangar.php?msg=Quest started!');  
           exit();
           }
-          
+            
  //=================================code voor quests spaceship 2==================================
            if ($startQuest == 3.1 || $startQuest == 3.2 || $startQuest == 3.3 || $startQuest == 3.4 || $startQuest == 3.5) {
          # code...
