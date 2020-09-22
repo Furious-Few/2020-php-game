@@ -12,7 +12,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 // code for selling 1 iron
 
 if ($_POST['formType'] == 'iron') {
-    if ($row['iron'] < 1000) {
+    if ($row['iron'] == 0) {
         header('Location: ../dashboard.php?msg=You dont have enough iron!');
         exit();
     }
@@ -33,7 +33,7 @@ if ($_POST['formType'] == 'iron') {
 // code for selling 1 gold
 
 if ($_POST['formType'] == 'gold') {
-    if ($row['gold'] < 250) {
+    if ($row['gold'] == 0) {
         header('Location: ../dashboard.php?msg=You dont have enough gold!');
         exit();
     }
@@ -54,7 +54,7 @@ if ($_POST['formType'] == 'gold') {
 // code for selling 1 diamond
 
 if ($_POST['formType'] == 'diamond') {
-    if ($row['diamond'] < 100) {
+    if ($row['diamond'] == 0) {
         header('Location: ../dashboard.php?msg=You dont have enough diamond!');
         exit();
     }

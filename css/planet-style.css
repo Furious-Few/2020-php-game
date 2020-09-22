@@ -40,6 +40,12 @@ body {
   font-weight: 300;
   background-color: #08090A; }
 
+  .flexbox{
+    display: flex;
+    
+    
+  }
+
 #universe {
   z-index: 1;
   position: absolute;

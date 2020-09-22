@@ -31,9 +31,15 @@
       <a class="titan" title="titan" href="#titanspeed">titan</a>
       <a class="amodeus" title="amodeus" href="#amodeusspeed">amodeus</a>
       <a class="plixeus" title="plixeus" href="#plixeusspeed">plixeus</a>
+      <div class="flexbox">
       <form action="planetdashboard.php">
             <input type="submit" value="Jump into orbit" />
+            
         </form>
+        <form action="dashboard.php">
+        <input type="submit" value="Go back"/>
+        </form>
+      </div>
     </div>
     <div id="controls">
       <label class="set-view">
