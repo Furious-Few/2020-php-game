@@ -59,7 +59,7 @@
         <div class="quests">
           <div class="quest1">
           <form action="backend/quest-backend.php">
-          <input type="hidden" name="busy" value="1">
+          <input type="hidden" name="busy" value="1.1">
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
@@ -74,7 +74,7 @@
 <?php //============================quest 2===================================// ?>
          <div class="quest2">
           <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="1">
+            <input type="hidden" name="busy" value="1.2">
               <p> 
      second main quest 
 
@@ -92,7 +92,7 @@
 
         <div class="quest3">
           <form action="backend/quest-backend.php">
-           <input type="hidden" name="busy" value="1">
+           <input type="hidden" name="busy" value="1.3">
              <p> 
          third main quest
 
@@ -113,7 +113,7 @@
 
           <div class="quest4">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="1">
+            <input type="hidden" name="busy" value="1.4">
               <p> 
 
      forth main quest 
@@ -131,7 +131,7 @@
 
         <div class="quest5">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="1">
+            <input type="hidden" name="busy" value="1.5">
               <p> 
 
      
@@ -175,7 +175,7 @@
        <div class="quests">
           <div class="quest1">
           <form action="backend/quest-backend.php">
-          <input type="hidden" name="busy" value="2">
+          <input type="hidden" name="busy" value="2.1">
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
@@ -190,7 +190,7 @@
 <?php //============================quest 2===================================// ?>
          <div class="quest2">
           <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="2">
+            <input type="hidden" name="busy" value="2.2">
               <p> 
      second main quest 
 
@@ -208,7 +208,7 @@
 
         <div class="quest3">
           <form action="backend/quest-backend.php">
-           <input type="hidden" name="busy" value="2">
+           <input type="hidden" name="busy" value="2.3">
              <p> 
          third main quest
 
@@ -229,7 +229,7 @@
 
           <div class="quest4">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="2">
+            <input type="hidden" name="busy" value="2.4">
               <p> 
 
      forth main quest 
@@ -247,7 +247,7 @@
 
         <div class="quest5">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="2">
+            <input type="hidden" name="busy" value="2.5">
               <p> 
 
      
@@ -291,7 +291,7 @@
     <div class="quests">
           <div class="quest1">
           <form action="backend/quest-backend.php">
-          <input type="hidden" name="busy" value="3">
+          <input type="hidden" name="busy" value="3.1">
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
@@ -305,7 +305,7 @@
         </div>
         <div class="quest2">
           <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="3">
+            <input type="hidden" name="busy" value="3.2">
               <p> 
      second main quest 
 
@@ -323,7 +323,7 @@
 
         <div class="quest3">
           <form action="backend/quest-backend.php">
-           <input type="hidden" name="busy" value="3">
+           <input type="hidden" name="busy" value="3.3">
              <p> 
          third main quest
 
@@ -344,7 +344,7 @@
 
           <div class="quest4">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="3">
+            <input type="hidden" name="busy" value="3.4">
               <p> 
 
      forth main quest 
@@ -362,7 +362,7 @@
 
         <div class="quest5">
            <form action="backend/quest-backend.php">
-            <input type="hidden" name="busy" value="3">
+            <input type="hidden" name="busy" value="3.5">
               <p> 
 
      
