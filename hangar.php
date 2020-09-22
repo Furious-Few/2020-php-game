@@ -170,10 +170,17 @@ if ($row['spaceshipThreeUnlocked']) {
 </head>
 <body>
     <main>
-        <!-- <div class="spaceshipOne">
-            <h1>Spaceship 1</h1>
-            <img src="img/spaceship1.png" alt="">
-        </div> -->
+        <hr>
+        <!-- ticket shop -->
+        <div class="ticket-shop">
+            <div class="item">
+                <h2>enkeltje</h2>
+            </div>
+            
+            <div class="item">
+                <h2>retour</h2>
+            </div>
+        </div>
     </main>
     <footer>
             <a href="dashboard.php"><p>Back!</p></a>
