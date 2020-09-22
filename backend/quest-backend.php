@@ -22,6 +22,18 @@
       $stmt = $conn->prepare($sql);
       $stmt->execute();
 
+      $date = date("Y/m/d");
+      $user = $row['id'];
+      $dateHour = date("h");
+      $dateMinute = date("i");
+      $dateSeconds = date("s");
+      // code for timer
+      $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`) VALUES
+               (NULL, $user, $startQuest, $date, $dateHour, $dateMinute, $dateSeconds)";
+
+      $stmt = $conn->prepare($sql2);
+      $stmt->execute();
+
       header('Location: ../hangar.php?msg=Quest started!');  
           exit(); 
         }
@@ -34,6 +46,18 @@
       $stmt = $conn->prepare($sql);
       $stmt->execute();
 
+      $date = date("Y/m/d");
+      $user = $row['id'];
+      $dateHour = date("h");
+      $dateMinute = date("i");
+      $dateSeconds = date("s");
+      // code for timer
+      $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`) VALUES
+               (NULL, $user, $startQuest, $date, $dateHour, $dateMinute, $dateSeconds)";
+
+      $stmt = $conn->prepare($sql2);
+      $stmt->execute();
+
       header('Location: ../hangar.php?msg=Quest started!');  
           exit();
           }
@@ -44,6 +68,18 @@
        
         $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
       $stmt = $conn->prepare($sql);
+      $stmt->execute();
+
+      $date = date("Y/m/d");
+      $user = $row['id'];
+      $dateHour = date("h");
+      $dateMinute = date("i");
+      $dateSeconds = date("s");
+      // code for timer
+      $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`) VALUES
+               (NULL, $user, $startQuest, $date, $dateHour, $dateMinute, $dateSeconds)";
+
+      $stmt = $conn->prepare($sql2);
       $stmt->execute();
 
       header('Location: ../hangar.php?msg=Quest started!');  
