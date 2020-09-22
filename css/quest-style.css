@@ -1,29 +1,53 @@
+body{
+	background-image: url('../img/home-banner.jpg');
+}
+p{
+	color: white;
+}
 .quests{
- flex-direction: row;	
-    width:1000px;
+	display: flex;
+ flex-direction: row;
+ justify-content:center;
 	padding: 5px;
 	
 }
-
+.questlog{
+	border:solid 1px;
+}
 
 
 .quest1{
 	border:solid 1px;
+	border-color: white;
 	padding-bottom: 5px;
+	margin: 10px;
+	padding: 10px;
 }
 .quest2{
 	border:solid 1px;
 	padding-bottom: 5px;
+	border-color: white;
+	margin: 10px;
+	padding: 10px;
 }
 .quest3{
 	border:solid 1px;
 	padding-bottom: 5px;
+	border-color: white;
+	margin: 10px;
+	padding: 10px;
 }
 .quest4{
 	border:solid 1px;
+	border-color: white;
 	padding-bottom: 5px;
+	margin: 10px;
+	padding: 10px;
 }
 .quest5{
 	border:solid 1px;
 	padding-bottom: 5px;
+	border-color: white;
+	margin: 10px;
+	padding: 10px;
 }

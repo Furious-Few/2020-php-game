@@ -173,18 +173,21 @@
 
      //==================================ship 2 quests======================================== ?>
        <div class="quests">
-          <div class="quest1">
+         <div class="quest1">
           <form action="backend/quest-backend.php">
-          <input type="hidden" name="busy" value="2.1">
+            <div class="questlog">
+            <input type="hidden" name="busy" value="2.1">
+             
             <p> first main quest 
 
       you get a task to investigate a unknown planet on your way there you come across some meteors you deside to mine them
       and collect the recources you get from them then you continue to go to the designated planet.
       
          2 min  reward + 100 iron
-            </p>
+               </p>
+              
             <input type="submit" name="start"/>
-          
+           </div>
           </form>
         </div>
 <?php //============================quest 2===================================// ?>
