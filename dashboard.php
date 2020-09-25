@@ -93,7 +93,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                     <div id="myProgress">
                       <div id="myBar"></div>
                   </div>
-                  <button onclick="move()">Click Me and wait 3 seconds!</button> 
+                  <button onclick="move()"><h3>Click Me and wait 3 seconds!</h3></button> 
               </a>
           </div>
           <script>
@@ -119,6 +119,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 </script>
 <div class="universe">
+    <h1>universe</h1>
     <a href="planets.php">
         <img src="img/universe.png" alt="universe" width="300px" height="300px">
     </a>
@@ -170,6 +171,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 </div>
 
 <div class="hangar">
+    <h1>hangar</h1>
     <a href="hangar.php">
         <img src="img/dashboard-hangar.gif" alt="Hangar">
     </a>
