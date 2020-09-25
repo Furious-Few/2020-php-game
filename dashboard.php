@@ -46,6 +46,7 @@ jQuery(document).ready(function() {
 </script>
 <!-- end of script -->
 </head>
+<audio src="starwars.mp3" controls></audio>
 </head>
 <body>
     <header>
@@ -83,7 +84,6 @@ jQuery(document).ready(function() {
         <hr>
     </header>
     <main>
-	<audio src="starwars.mp3" controls></audio>
         <div class="main-flex">
             <div class="meteor">
                 <a href="backend/meteorClick.php">
