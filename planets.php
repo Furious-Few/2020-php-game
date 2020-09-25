@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Brought to you by Huts "Space Miner"</title>
+  <title>Brought to you by Huts: Space Miner</title>
   <link rel="stylesheet" href="css/planet-style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <header> 
