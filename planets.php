@@ -1,3 +1,13 @@
+<?php
+  session_start();
+  require 'backend/connection.php';
+  $id = $_SESSION['id'];
+  $sql = "SELECT * FROM users WHERE id = $id";
+  $stmt = $conn->prepare($sql);
+  $stmt->execute();
+  $row = $stmt->fetch(PDO::FETCH_ASSOC); 
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -60,11 +70,16 @@
         <input type="radio" class="set-distance" name="scale">
         <span>Distance</span>
       </label>
+      <label>
+      <input type="radio" class="" name="">
+        <span>TicketCount: <?php echo $row['ticketCount']; ?></span>
+        
+      </label>
     </div>
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="tubiter">
-        <a href="backend/planetController?planet=zyon" target="_blank">
+        <a href="backend/planetController.php?planet=zyon" target="_blank">
           <div id="zyon" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -76,7 +91,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=skorp" target="_blank">
+          <a href="backend/planetController.php?planet=skorp" target="_blank">
           <div id="skorp" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -97,7 +112,7 @@
                 </div>
               </div>
               </a>
-              <a href="backend/planetController?planet=tubiter" target="_blank">
+              <a href="backend/planetController.php?planet=tubiter" target="_blank">
               <div class="planet">
                 <dl class="infos">
                   <dt>tubiter</dt>
@@ -107,7 +122,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=ziretune" target="_blank">
+          <a href="backend/planetController.php?planet=ziretune" target="_blank">
           <div id="ziretune" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -119,7 +134,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=resculate" target="_blank">
+          <a href="backend/planetController.php?planet=resculate" target="_blank">
           <div id="resculate" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -131,7 +146,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=titan" target="_blank">
+          <a href="backend/planetController.php?planet=titan" target="_blank">
           <div id="titan" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -144,7 +159,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=amodeus" target="_blank">
+          <a href="backend/planetController.php?planet=amodeus" target="_blank">
           <div id="amodeus" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -156,7 +171,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=plixeus" target="_blank">
+          <a href="backend/planetController.php?planet=plixeus" target="_blank">
           <div id="plixeus" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -168,7 +183,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController?planet=thenaus" target="_blank">
+          <a href="backend/planetController.php?planet=auction_house/bidding" target="_blank">
           <div id="thenaus">
             <dl class="infos">
               <dt>thenaus</dt>
