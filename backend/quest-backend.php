@@ -22,7 +22,7 @@
       $stmt = $conn->prepare($sql);
       $stmt->execute();
 
-      $date = date("Y/m/d");
+      $date = date("y-m-d");
       $user = $row['id'];
       $dateHour = date("h");
       $dateMinute = date("i");
@@ -33,8 +33,8 @@
 
       $stmt = $conn->prepare($sql2);
       $stmt->execute();
-
-      header('Location: ../hangar.php?msg=Quest started!');  
+      var_dump($date);
+      //header('Location: ../hangar.php?msg=Quest started!');  
           exit(); 
         }
 
@@ -53,7 +53,7 @@
       $dateSeconds = date("s");
       // code for timer
       $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`) VALUES
-               (NULL, $user, $startQuest, $date, $dateHour, $dateMinute, $dateSeconds)";
+               (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds)";
 
       $stmt = $conn->prepare($sql2);
       $stmt->execute();
