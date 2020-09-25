@@ -83,12 +83,12 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <hr>
     </header>
     <main>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
 
         <div class="main-flex">
-            <div class="meteor">
+            
+
+        <div class="meteor">
                 <a href="backend/meteorClick.php">
                     <button onclick="move()"><img src="img/meteor.png" alt="meteor-image" width="150px" height="300px"></button>
                     <div id="myProgress">
@@ -119,21 +119,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 </script>
-<div class="universe">
-    <a href="planets.php">
-        <img src="img/universe.png" alt="universe" width="300px" height="300px">
-    </a>
-</div>
-=======
->>>>>>> Stashed changes
-	<audio src="starwars.mp3" controls></audio>
-        <div class="main-flex">
-            <div class="meteor">
-                <a href="backend/meteorClick.php">
-                    <img src="img/meteor.png" alt="meteor-image" width="150px" height="300px" >
-                </a>
-                <h1>Click on the meteor <br> for materials!</h1>
-            </div>
 
             
             <div class="universe">
@@ -142,18 +127,9 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
                     <img src="img/universe.png" alt="universe" width="300px" height="300px">
                 </a>
             </div>
-
-            <div class="shop">
-            <h1>Shop:</h1>
-                <!-- form for selling 1 iron -->
-                <form action="backend/shop.php" method="post">
-                    <input type="hidden" name="formType" value="iron"/>
-                    <p>Sell 1 iron, worth 10 coins</p>
-                    <input type="submit" value="Sell!">
-                </form>
->>>>>>> a75c4ce6bfa55f0f8b28b7b6ecc0561ecff37267
-
+            
 <div class="shop">
+<h1>Shop:</h1>
     <!-- form for selling 1 iron -->
     <form action="backend/shop.php" method="post">
         <input type="hidden" name="formType" value="iron"/>
@@ -174,14 +150,13 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <p>Sell 1 diamond, worth 200 coins</p>
         <input type="submit" value="Sell!">
     </form>
-
+<br>
     <form action="backend/sell_all.php" method="post">
         <input type="hidden" name="formType" value="iron">
         <label for="Iron">Sell all Iron</label><br>
         <input type="submit" value="Sell all!">
     </form>
 
-<<<<<<< HEAD
     <form action="backend/sell_all.php" method="post">
         <input type="hidden" name="formType" value="gold"/>
         <label for="Gold">Sell all Gold</label>
@@ -214,38 +189,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
             <div class="chat-flex">
 
                 <div id="div_refresh">
-=======
-                <form action="backend/sell_all.php" method="post">
-                    <input type="hidden" name="formType" value="diamond"/>
-                    <label for="diamond">Sell all diamonds</label>
-                    <input type="submit" value="Sell all!">
-                </form>
-            </div>
-            
-            
-
-            <div class="hangar">
-                <a href="hangar.php">
-            <h1>Hangar</h1>
-                    <img src="img/dashboard-hangar.gif" alt="Hangar">
-                </a>
-                
-            </div>
-        </div> 
-    </main>
-    <div class="chat-name">
-        <h1>Chat</h1>
-    </div>
-    
-    <hr>
-    <footer>
-        <div class="footer-flex">
-            <div class="chat">
-            
-                <div class="chat-flex">
-                
-                    <div id="div_refresh">
->>>>>>> a75c4ce6bfa55f0f8b28b7b6ecc0561ecff37267
 
                 </div>
             </div>
