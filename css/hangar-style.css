@@ -42,3 +42,29 @@ input{
 .hangar-flex p{
     font-size: 25px;
 }
+
+/* code for ticket shop */
+
+.ticket-shop{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.item{
+    font-size: 25px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.item input{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.ticket-shop-anoucements{
+    text-align: center;
+    font-size: 27px;
+    text-decoration: underline;
+
+}

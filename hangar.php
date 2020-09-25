@@ -175,18 +175,45 @@ if ($row['spaceshipThreeUnlocked']) {
     <link rel="stylesheet" href="css/hangar-style.css">
 
     <title>Hangar</title>
+    
 </head>
 <body>
     <main>
         <hr>
         <!-- ticket shop -->
+        <div class="ticket-shop-anoucements">
+            <h1>ticket shop</h1>
+            <?php
+            echo "You have: " . $row['ticketCount'] . " one way tickets";
+            echo '<br>';
+            $retourCount = $row['ticketCount'] / 2;
+            $retourCountFloor = floor($retourCount);
+            echo "You have: " . $retourCountFloor . " retour tickets";
+
+    ?>
+        </div>
+        
         <div class="ticket-shop">
+        
+        <!-- code for tickets -->
             <div class="item">
-                <h2>enkeltje</h2>
+                <h2>One way</h2>
+                <img src="img/retour.png" alt="one way ticket" width="150px" height="150px">
+                <form action="backend/ticket-shop.php" method="post">
+                    <input type="hidden" name="formType" value="enkel"/>
+                    <p>One way ticket: $175</p>
+                    <input type="submit" value="Buy!">
+                </form>
             </div>
             
             <div class="item">
                 <h2>retour</h2>
+                <img src="img/retour.png" alt="retour ticket" width="150px" height="150px">
+                <form action="backend/ticket-shop.php" method="post">
+                    <input type="hidden" name="formType" value="retour"/>
+                    <p>Retour ticket: $250</p>
+                    <input type="submit" value="Buy!">
+                </form>
             </div>
         </div>
     </main>
