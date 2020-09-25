@@ -2,13 +2,14 @@
     margin: 0px;
     padding: 0px;
 }
-
+h1{
+    color: white;
+}
 .nav-resources p{
     padding-right: 25px;
     font-size: 25px;
     text-align: right;
     color: white;
-    
 }
 
 /* make a flex from nav */
@@ -44,7 +45,7 @@ header{
     animation-duration: 4s;
     animation-iteration-count: infinite;
   }
-  
+
   @keyframes example {
     0%   {transform: rotate(-10deg); bottom: 20px;}
     25%  {transform: rotate( 0deg); bottom: 0px;}
@@ -63,6 +64,9 @@ header{
     font-size: 30px;
     margin-top: 100px;
     border: 2px solid black;
+}
+.shop h1{
+    text-align: center;
 }
 
 /* give the forms on the dashboard flex so the button is next to the text */
@@ -103,6 +107,12 @@ body{
     animation-duration: 12s;
     animation-iteration-count: infinite;
     margin-top: 100%;
+}
+.hangar h1{
+    position: absolute;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 100px;
 }
 
 @keyframes spaceStation {
