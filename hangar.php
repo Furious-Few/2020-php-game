@@ -45,6 +45,14 @@ if ($row['spaceshipOneUnlocked'] == true) {
             <?php
                 if ($row['spaceship1quest'] == true) {
                     echo '<p>Spaceship 1 is busy!</p>';
+                    
+                    // check wanneer hij is gestart
+                    // check wanneer hij eindigt
+                    // check hoelang het nog duurt
+
+                    // klaar? zet de spaceship op beschikbaar
+                    
+
                 }
                 elseif ($row['spaceship1quest'] == false) {
                     echo '<p>Spaceship 1 is ready for a quest!</p>';

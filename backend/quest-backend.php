@@ -85,7 +85,7 @@
          $stmt = $conn->prepare($sql2);
          $stmt->execute();
    
-         header('Location: ../hangar.php?msg=Quest started HUTS!');  
+         header('Location: ../hangar.php?msg=Quest started!');  
              exit();
              }
 ?>
