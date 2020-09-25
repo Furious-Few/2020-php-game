@@ -73,7 +73,7 @@ jQuery(document).ready(function() {
                 ?>
             </div>
             <div class="nav-resources">
-                <h1>You're resources:</h1>
+                <h1>Your resources:</h1>
                 <p>Coins: <?php echo $row['coins'] ?></p>
                 <p>Iron: <?php echo $row['iron'] ?></p>
                 <p>Gold: <?php echo $row['gold'] ?></p>
