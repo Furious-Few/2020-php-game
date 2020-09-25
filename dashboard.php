@@ -73,6 +73,7 @@ jQuery(document).ready(function() {
                 ?>
             </div>
             <div class="nav-resources">
+                <h1>You're resources:</h1>
                 <p>Coins: <?php echo $row['coins'] ?></p>
                 <p>Iron: <?php echo $row['iron'] ?></p>
                 <p>Gold: <?php echo $row['gold'] ?></p>
@@ -88,15 +89,19 @@ jQuery(document).ready(function() {
                 <a href="backend/meteorClick.php">
                     <img src="img/meteor.png" alt="meteor-image" width="150px" height="300px" >
                 </a>
+                <h1>Click on the meteor <br> for materials!</h1>
             </div>
 
+            
             <div class="universe">
+            <h1>Universe</h1>
                 <a href="planets.php">
                     <img src="img/universe.png" alt="universe" width="300px" height="300px">
                 </a>
             </div>
 
             <div class="shop">
+            <h1>Shop:</h1>
                 <!-- form for selling 1 iron -->
                 <form action="backend/shop.php" method="post">
                     <input type="hidden" name="formType" value="iron"/>
@@ -137,10 +142,14 @@ jQuery(document).ready(function() {
                 </form>
             </div>
             
+            
+
             <div class="hangar">
                 <a href="hangar.php">
+            <h1>Hangar</h1>
                     <img src="img/dashboard-hangar.gif" alt="Hangar">
                 </a>
+                
             </div>
         </div> 
     </main>

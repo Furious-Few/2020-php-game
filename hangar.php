@@ -29,7 +29,7 @@ $sql = "SELECT * FROM users WHERE id = $id";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
+ 
 // code for spaceship 1
 ?>
 <div class="hangar-flex">
