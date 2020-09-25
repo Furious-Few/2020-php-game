@@ -32,6 +32,39 @@ header{
     background: radial-gradient(circle, rgba(255,123,123,1) 0%, rgba(201,148,40,1) 72%, rgba(255,0,0,1) 100%);
 }
 
+/*.meteor a{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+background-color: white;
+
+}
+.meteor p{
+color: black;
+}*/
+.meteor button{
+    background-color: transparent;
+    border: none;
+}
+
+.meteor button:focus{
+    outline: none ;
+}
+
+#myProgress {
+    margin-top: 10px;
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+
 .meteor img{
     transform: rotate(-30deg);
     padding-top: 10%;
