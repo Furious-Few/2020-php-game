@@ -45,8 +45,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     });
 </script>
 <!-- end of script -->
-</head>
-</head>
+
 <body>
     <header>
         <nav>
@@ -119,14 +118,14 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 </script>
+<div class="universe">
+    <a href="planets.php">
+        <img src="img/universe.png" alt="universe" width="300px" height="300px">
+    </a>
+</div>
 
+        <div class="main-flex">
             
-            <div class="universe">
-            <h1>Universe</h1>
-                <a href="planets.php">
-                    <img src="img/universe.png" alt="universe" width="300px" height="300px">
-                </a>
-            </div>
             
 <div class="shop">
 <h1>Shop:</h1>
