@@ -21,10 +21,56 @@ if ( !isset( $_SESSION['id']) ) {
 
 <?php
 require_once 'backend/connection.php';
+$id = $_SESSION['id'];
+
+// check of de quest al klaar is
+$timerSQL = "SELECT * FROM timer WHERE user = $id";
+$query = $conn->query($timerSQL);
+$quests = $query->fetchAll(PDO::FETCH_ASSOC);
+
+
+// tijd ophalen uit de DB
+
+
+foreach ($quests as $quest) {
+    // save start date in variable
+    $dateTime1 = $quest['date'] . "-" . $quest['h'] . "-" . $quest['m'] . "-" . $quest['s'];
+
+    echo "spaceship ";
+    echo $quest['spaceship'];
+    echo " started quest ";
+
+    // quest exploden
+
+    $rightQuest = explode(".", $quest['quest']);
+
+    echo $rightQuest[1];
+    echo " - ";
+
+    // tijd berekeen wanneer hij origineeel klaar zou zijn
+    
+    // if statements om te kijken welke quest je doet (hoeveel tijd je erbij op moet tellen)
+    if ($rightQuest == 1) {
+        echo "huts";
+        $quest['m'] += 2;
+        echo $quest;
+    }
+    echo "Start time: " . $dateTime1;
+    echo "<br>";
+    // $finishTime = ;
+}
+
+
+
+// tijd van NU rekenen
+
+// vergelijken
+
+// update query
 
 
 // get all infromation from the user logged in
-$id = $_SESSION['id'];
+
 $sql = "SELECT * FROM users WHERE id = $id";
 $stmt = $conn->prepare($sql);
 $stmt->execute();

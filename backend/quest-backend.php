@@ -9,9 +9,9 @@
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    $sql = "UPDATE users SET spaceship1quest = 1";
-    $stmt = $conn->prepare($sql);
-    $stmt->execute();
+    // $sql = "UPDATE users SET spaceship1quest = 1";
+    // $stmt = $conn->prepare($sql);
+    // $stmt->execute();
 
   $startQuest = $_GET['busy'];
     //=================================code voor quests spaceship 1==================================
@@ -30,7 +30,7 @@
        // code for timer
        var_dump($date);
        $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`, `spaceship`) VALUES
-       (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, $startQuest)";
+       (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, 1)";
  
        $stmt = $conn->prepare($sql2);
        $stmt->execute();
@@ -55,7 +55,7 @@
       // code for timer
       var_dump($date);
       $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`, `spaceship`) VALUES
-               (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, $startQuest)";
+               (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, 2)";
 
       $stmt = $conn->prepare($sql2);
       $stmt->execute();
@@ -80,7 +80,7 @@
          // code for timer
          var_dump($date);
          $sql2 = "INSERT INTO `timer` (`id`, `user`, `quest`, `date`, `h`, `m`, `s`, `spaceship`) VALUES
-         (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, $startQuest)";
+         (NULL, $user, $startQuest, '$date', $dateHour, $dateMinute, $dateSeconds, 3)";
    
          $stmt = $conn->prepare($sql2);
          $stmt->execute();
