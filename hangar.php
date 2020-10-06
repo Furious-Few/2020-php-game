@@ -52,11 +52,7 @@ foreach ($quests as $quest) {
     // tijd berekeen wanneer hij origineeel klaar zou zijn
     
     // if statements om te kijken welke quest je doet (hoeveel tijd je erbij op moet tellen)
-    if ($rightQuest == 1) {
-        echo "huts";
-        $quest['m'] += 2;
-        echo $quest;
-    }
+
     echo "Start time: " . $dateTime1 . $questStartedTime;
     echo "<br>";
     // $finishTime = ;
