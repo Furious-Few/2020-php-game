@@ -1,4 +1,5 @@
 <?php
+ini_set("display_errors", 0);
 session_start();
 
 //require 'header.php';
@@ -34,7 +35,8 @@ $quests = $query->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($quests as $quest) {
     // save start date in variable
-    $dateTime1 = $quest['date'] . "-" . $quest['h'] . "-" . $quest['m'] . "-" . $quest['s'];
+    $dateTime1 = $quest['date'] . " ";
+    $questStartedTime = $quest['h'] . ":" . $quest['m'] . ":" . $quest['s'];
 
     echo "spaceship ";
     echo $quest['spaceship'];
@@ -55,7 +57,7 @@ foreach ($quests as $quest) {
         $quest['m'] += 2;
         echo $quest;
     }
-    echo "Start time: " . $dateTime1;
+    echo "Start time: " . $dateTime1 . $questStartedTime;
     echo "<br>";
     // $finishTime = ;
 }
@@ -63,8 +65,25 @@ foreach ($quests as $quest) {
 
 
 // tijd van NU rekenen
-
+$currentTime = date("h:i:s");
+echo "Time quest is started: " . $questStartedTime;
+echo "<br>";
+echo "Current time: " . $currentTime;
+echo "<br>";
 // vergelijken
+
+
+if ($currentTime) {
+    # code...
+}
+$rightSpaceship = $quest['spaceship'];
+
+if(($dateTime1-$currentTime) > 120) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    
+  }else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+  }
 
 // update query
 
