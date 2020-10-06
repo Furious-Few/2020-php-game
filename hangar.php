@@ -41,10 +41,62 @@ foreach ($quests as $quest) {
     echo "spaceship ";
     echo $quest['spaceship'];
     echo " started quest ";
-
+    //echo "<br>";
     // quest exploden
 
     $rightQuest = explode(".", $quest['quest']);
+    $switchQuest = $rightQuest[1];
+   // echo "rightQuest: $rightQuest[1]";
+    //echo "<br>";
+     $currentTime = date("h:i:s");
+    echo "Time quest is started: " . $questStartedTime;
+    echo "<br>";
+    echo "Current time: " . $currentTime;
+    echo "<br>";
+// vergelijken
+
+$rightSpaceship = $quest['spaceship'];
+
+
+switch ($switchQuest) {
+        case '1':
+
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time > 0.5) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+
+    $sql = "UPDATE `users` SET `iron` = `iron` + 100 WHERE `users`.`id` = $id;";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+  }
+
+            break;
+        case '2';
+            echo "case 2";
+            echo "<br>";
+            break;
+        case '3':
+            
+            break;
+        case '4':
+
+            break;
+        case '5':
+            
+            break;
+        
+        default:
+            
+            break;
+    }
+  
 
     echo $rightQuest[1];
     echo " - ";
@@ -52,6 +104,7 @@ foreach ($quests as $quest) {
     // tijd berekeen wanneer hij origineeel klaar zou zijn
     
     // if statements om te kijken welke quest je doet (hoeveel tijd je erbij op moet tellen)
+
 
     echo "Start time: " . $dateTime1 . $questStartedTime;
     echo "<br>";
@@ -61,25 +114,25 @@ foreach ($quests as $quest) {
 
 
 // tijd van NU rekenen
-$currentTime = date("h:i:s");
-echo "Time quest is started: " . $questStartedTime;
-echo "<br>";
-echo "Current time: " . $currentTime;
-echo "<br>";
-// vergelijken
+// $currentTime = date("h:i:s");
+// echo "Time quest is started: " . $questStartedTime;
+// echo "<br>";
+// echo "Current time: " . $currentTime;
+// echo "<br>";
+// // vergelijken
 
 
-if ($currentTime) {
-    # code...
-}
-$rightSpaceship = $quest['spaceship'];
+// if ($currentTime) {
+//     # code...
+// }
+// $rightSpaceship = $quest['spaceship'];
 
-if(($dateTime1-$currentTime) > 120) {     
-    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+// if(($dateTime1-$currentTime) > 120) {     
+//     echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
     
-  }else {
-    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
-  }
+//   }else {
+//     echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+//   }
 
 // update query
 

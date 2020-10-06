@@ -75,7 +75,7 @@
          $date = date("Y/m/d");
          $user = $row['id'];
          $dateHour = date("h");
-         $dateMinute = date("i");
+         $dateMinute = date("m");
          $dateSeconds = date("s");
          // code for timer
          var_dump($date);
