@@ -168,9 +168,7 @@
   </div>
     <div class="box">
     <div class="boxInner">
-        <marquee behavior="alternate">
         <img src="img/landline.png">
-        </marquee>
       <img src="img/1.png" />
       <div class="titleBox">Tegel25</div>
     </div>
