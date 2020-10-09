@@ -21,6 +21,9 @@
   <!-- Define all of the tiles: -->
   <div class="box">
     <div class="boxInner">
+       <marquee behavior="alternate">
+        <img src="img/space-station.png">
+        </marquee>
       <img src="img/1.png" />
       <div class="titleBox">Tegel1</div>
     </div>
