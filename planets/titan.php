@@ -94,25 +94,13 @@
   <div class="box">
     <div class="boxInner">
       <img src="img/1.png" />
-      <div class="titleBox">Tegel1</div>
+      <div class="titleBox">Tegel13</div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
       <img src="img/1.png" />
-      <div class="titleBox">Tegel2</div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxInner">
-      <img src="img/1.png" />
-      <div class="titleBox">Tegel3</div>
-    </div>
-  </div>
-  <div class="box">
-    <div class="boxInner">
-      <img src="img/1.png" />
-      <div class="titleBox">Tegel4</div>
+      <div class="titleBox">Tegel14</div>
     </div>
   </div>
   <div class="box">
@@ -148,19 +136,31 @@
   <div class="box">
     <div class="boxInner">
       <img src="img/1.png" />
-      <div class="titleBox">Tegel10</div>
+      <div class="titleBox">Tegel20</div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
       <img src="img/1.png" />
-      <div class="titleBox">Tegel11</div>
+      <div class="titleBox">Tegel21</div>
     </div>
   </div>
   <div class="box">
     <div class="boxInner">
       <img src="img/1.png" />
-      <div class="titleBox">Tegel12</div>
+      <div class="titleBox">Tegel22</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="img/1.png" />
+      <div class="titleBox">Tegel23</div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="boxInner">
+      <img src="img/1.png" />
+      <div class="titleBox">Tegel24</div>
     </div>
   </div>
     <div class="box">
