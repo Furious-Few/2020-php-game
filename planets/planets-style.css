@@ -16,10 +16,10 @@ body {
 }
 .boxInner {
    position: absolute;
-   left: 10px;
-   right: 10px;
-   top: 10px;
-   bottom: 10px;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
    overflow: hidden;
 }
 .boxInner img {
