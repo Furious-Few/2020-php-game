@@ -43,9 +43,15 @@ foreach ($quests as $quest) {
     echo " started quest ";
     //echo "<br>";
     // quest exploden
+   // $rightmission = $_GET['id'] + $rightQuest
 
-    $rightQuest = explode(".", $quest['quest']);
-    $switchQuest = $rightQuest[1];
+    $rightQuest1 = explode("1.", $quest['quest']);
+    $rightQuest2 = explode("2.", $quest['quest']);
+    $rightQuest3 = explode("3.", $quest['quest']);
+    $switchQuest1 = $rightQuest1[1];
+    $switchQuest2 = $rightQuest2[1];
+    $switchQuest3 = $rightQuest3[1];
+    
    // echo "rightQuest: $rightQuest[1]";
     //echo "<br>";
      $currentTime = date("h:i:s");
@@ -58,45 +64,387 @@ foreach ($quests as $quest) {
 $rightSpaceship = $quest['spaceship'];
 
 
-switch ($switchQuest) {
+switch ($switchQuest1) {
         case '1':
 
         $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
 
-  if($diff_time > 0.5) {     
+  if($diff_time >= 2) {     
     echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
     $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
          $stmt = $conn->prepare($sql);
          $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
 
-    $sql = "UPDATE `users` SET `iron` = `iron` + 100 WHERE `users`.`id` = $id;";
+  }
+  else {
+  
+    $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+
+  }
+
+            break;
+        case '2';
+            
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 7) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 300 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '3':
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 15) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '4':
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 20) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 1600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 2000 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 15 WHERE id = $id";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
   }
   else {
     echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '5':
+     $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 45) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 2500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 3500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship1quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        
+    }
+  switch ($switchQuest2) {
+        case '1':
+
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 2) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest2";
+    $sql = "UPDATE users SET spaceship2quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+
   }
 
             break;
         case '2';
-            echo "case 2";
-            echo "<br>";
+            
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 7) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 300 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
             break;
         case '3':
-            
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 15) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
             break;
         case '4':
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
 
+  if($diff_time >= 20) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 1600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 2000 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 15 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
             break;
         case '5':
-            
+     $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 45) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 2500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 3500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship2quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
             break;
         
-        default:
-            
-            break;
     }
-  
+      switch ($switchQuest3) {
+        case '1':
+
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 2) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest2";
+    $sql = "UPDATE users SET spaceship3quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+
+  }
+
+            break;
+        case '2';
+            
+        $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 7) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 300 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '3':
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 15) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '4':
+                    $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 20) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 1600 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 2000 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 15 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        case '5':
+     $diff_time=(strtotime(date($currentTime))-strtotime($questStartedTime))/60;
+
+  if($diff_time >= 45) {     
+    echo "Spaceship $rightSpaceship finished task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = false WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+    $sql = "UPDATE users SET iron = iron + 2500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET gold = gold + 3500 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $sql = "UPDATE users SET diamond = diamond + 100 WHERE id = $id";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+  }
+  else {
+    echo "Spaceship $rightSpaceship is busy doing task $rightQuest[1]";
+    $sql = "UPDATE users SET spaceship3quest = true WHERE id = $id";
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+   
+  }
+            break;
+        
+    }
 
     echo $rightQuest[1];
     echo " - ";
