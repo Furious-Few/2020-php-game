@@ -6,11 +6,16 @@
         $sql = "SELECT * FROM chat";
         $query = $conn->query($sql);
         $chats = $query->fetchAll(PDO::FETCH_ASSOC);
-        $username = $_SESSION['username'];
+        $username = $_SESSION['id'];
 
+        
+        
 
         foreach ($chats as $chat) {
-            echo "[${chat['time']}] <b>$username : </b> ${chat['message']}<br><br>";
+            
+
+
+            echo "[${chat['time']}] <b>${chat['user']} : </b> ${chat['message']}<br><br>";
 
         }
 ?>
