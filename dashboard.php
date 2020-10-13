@@ -27,6 +27,11 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="css/dashboard-style.css">
     <title>Space miner</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<script src="js/like_button.js"></script>
     <script>
         $(document).ready(function(){
          $("#div_refresh").load("load.php");
