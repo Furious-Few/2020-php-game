@@ -25,7 +25,7 @@
         // 1 ticket eraf halen
         
         // naarttoe sturen
-        header('Location: ../' . $targetPlanet . '.php');
+        header('Location: ../planets/' . $targetPlanet . '.php');
         exit();
     }
     else {

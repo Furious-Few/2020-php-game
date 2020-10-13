@@ -146,7 +146,7 @@
             </div>
           </div>
           </a>
-          <a href="backend/planetController.php?planet=titan" target="_blank">
+          <a href="planets/titan.php" target="_blank">
           <div id="titan" class="orbit">
             <div class="pos">
               <div class="planet">
