@@ -22,7 +22,7 @@
   <div class="box">
     <div class="boxInner">
        <marquee behavior="alternate">
-        <img src="img/oil-tank.png">
+        <img src="img/babyyoda.png">
         </marquee>
       <img src="img/2.png" />
       <div class="titleBox">Tegel1</div>
