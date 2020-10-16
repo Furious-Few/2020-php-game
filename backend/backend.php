@@ -74,11 +74,32 @@
         $_SESSION['id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
         $_SESSION['user_admin'] = $user['admin'];
-        //session_start($_SESSION['id'] = $user['id']);
+        
+        // variabele voor ID
+        $ItemsID = $_SESSION['id'];
+        // checken of de ID al in de tabel staat
+        $sql = "SELECT * FROM items WHERE id = :id";
+        $query = $conn->prepare($sql);
+        $query->execute([
+          ':id' => $ItemsID
+        ]);
+        $tabelExists = $query->rowCount();
 
-        header('Location: ../dashboard.php?msg=You are logged in!');
-        exit();
+        // zo ja, wegsturen
+        if ($tabelExists) {
+          header('Location: ../dashboard.php?msg=You are logged in!');
+          exit();
+        } else { // zo nee, aanmaken en dan verder sturen
+          $sql = "INSERT INTO items (id, item1, item2, item3) 
+              VALUES ($ItemsID, 0, 0, 0)";
 
+          $prepare = $conn->prepare($sql);
+          $prepare->execute();
+
+          header('Location: ../dashboard.php?msg=You are logged in!');
+          exit();
+        }
+      
       }
     else {
       header('Location: ../login.php?msg=User doesnt excist!');

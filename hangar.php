@@ -270,7 +270,7 @@ foreach ($quests as $quest) {
     echo "spaceship ";
     echo $quest['spaceship'];
     echo " started quest ";
-    //echo "<br>";
+    // echo "<br>";
     // quest exploden
    // $rightmission = $_GET['id'] + $rightQuest
 
@@ -285,8 +285,8 @@ foreach ($quests as $quest) {
     //echo "<br>";
      $currentTime = date("h:i:s");
     echo "Time quest is started: " . $questStartedTime;
-    echo "<br>";
-    echo "Current time: " . $currentTime;
+    // echo "<br>";
+    // echo "Current time: " . $currentTime;
     echo "<br>";
 // vergelijken
 
@@ -684,6 +684,6 @@ switch ($switchQuest1) {
 
 
     echo "Start time: " . $dateTime1 . $questStartedTime;
-    echo "<br>";
+    echo "<hr>";
     // $finishTime = ;
 }
