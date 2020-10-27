@@ -108,7 +108,7 @@ if ($row['item1']) {
 if ($row['item2']) {
   // item showen
   ?>
-  <a href="imageclick.php?id=2"><img src="img/satellite.png" alt="satellite" width="400px" height="400px"></a>
+  <a href="../backend/planets/imageclick.php?id=2"><img src="img/satellite.png" alt="satellite" width="400px" height="400px"></a>
   <?php
   // image showen
   echo '<h1>satellite</h1>';
@@ -138,7 +138,7 @@ if ($row['item2']) {
 if ($row['item3']) {
   // item showen
   ?>
-  <a href="imageclick.php?id=3"><img src="img/moon-buggy.png" alt="moon buggy"  width="400px" height="250px"></a>
+  <a href="../backend/planets/imageclick.php?id=3"><img src="img/moon-buggy.png" alt="moon buggy"  width="400px" height="250px"></a>
   <?php
   // image showen
   ?>

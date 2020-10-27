@@ -14,12 +14,12 @@ $materialGenerator = rand(1,10);
 
 if ($image == 1) {
     // random number for quentity
-    $randomNumber = rand(5,10);
+    $randomNumber = rand(50,100);
 
     // stuk sql om in de databsae de hoeveelheid te zetten
-    $sql = "UPDATE `users` SET `gold` = `gold` + $randomNumber WHERE `users`.`id` = $id;";
+    $sql = "UPDATE `users` SET `iron` = `iron` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
-    sleep(3);
+    sleep(1);
     // de sql uitvoeren
     $stmt->execute();
 
@@ -27,7 +27,7 @@ if ($image == 1) {
 
     // message wat er is gebeurt
     $Message = $_SESSION['username'];
-    $Message = " got $randomNumber gold";
+    $Message = " got $randomNumber iron";
     $sql2 = "INSERT INTO bank_history ( name, message) VALUES (:name, :message)";
 
     $prepare = $conn->prepare($sql2);
@@ -36,18 +36,18 @@ if ($image == 1) {
         ':message' =>$Message
       ]);
 
-    header('Location: ../../planets/tubiter.php?msg=You got ' . $randomNumber . ' gold!');  
+    header('Location: ../../planets/tubiter.php?msg=You got ' . $randomNumber . ' iron!');  
     exit();
 }
 
 if ($image == 2) {
-    // random number for quentity
-    $randomNumber = rand(1,10);
+    // random number for quantity
+    $randomNumber = rand(20,45);
 
     // stuk sql om in de databsae de hoeveelheid te zetten
     $sql = "UPDATE `users` SET `gold` = `gold` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
-    sleep(3);
+    sleep(1);
     // de sql uitvoeren
     $stmt->execute();
 
@@ -64,18 +64,18 @@ if ($image == 2) {
         ':message' =>$Message
       ]);
 
-    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');  
-    exit();
+      header('Location: ../../planets/tubiter.php?msg=You got ' . $randomNumber . ' gold!');  
+      exit();
 }
 
 if ($image == 3) {
     // random number for quentity
-    $randomNumber = rand(1,10);
+    $randomNumber = rand(10,25);
 
     // stuk sql om in de databsae de hoeveelheid te zetten
-    $sql = "UPDATE `users` SET `gold` = `gold` + $randomNumber WHERE `users`.`id` = $id;";
+    $sql = "UPDATE `users` SET `diamond` = `diamond` + $randomNumber WHERE `users`.`id` = $id;";
     $stmt = $conn->prepare($sql);
-    sleep(3);
+    sleep(1);
     // de sql uitvoeren
     $stmt->execute();
 
@@ -83,7 +83,7 @@ if ($image == 3) {
 
     // message wat er is gebeurt
     $Message = $_SESSION['username'];
-    $Message = " got $randomNumber gold";
+    $Message = " got $randomNumber diamond";
     $sql2 = "INSERT INTO bank_history ( name, message) VALUES (:name, :message)";
 
     $prepare = $conn->prepare($sql2);
@@ -92,8 +92,8 @@ if ($image == 3) {
         ':message' =>$Message
       ]);
 
-    header('Location: ../dashboard.php?msg=You got ' . $randomNumber . ' gold!');  
-    exit();
+      header('Location: ../../planets/tubiter.php?msg=You got ' . $randomNumber . ' diamonds!');  
+      exit();
 }
 
 
