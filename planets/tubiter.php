@@ -19,6 +19,11 @@ if ( !isset( $_SESSION['id']) ) {
 ?>
 <link rel="stylesheet" href="../css/dashboard-style.css">
 <link rel="stylesheet" href="../css/tubiter-style.css">
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
 
 <header>
       <nav>
@@ -165,3 +170,5 @@ if ($row['item3']) {
 </div>
 
 </div>
+
+<button onclick="goBack()">Go Back</button>
